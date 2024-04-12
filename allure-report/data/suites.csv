@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 12 21:56:00 MSK 2024","Fri Apr 12 21:56:09 MSK 2024","8765","","MobileTests.Tests","","MobileTests.Tests","checkSubtracting","Тест расчета вычитания в калькуляторе.",""
+"passed","Fri Apr 12 21:55:24 MSK 2024","Fri Apr 12 21:55:33 MSK 2024","9409","","MobileTests.Tests","","MobileTests.Tests","checkDividing","Тест расчета деления в калькуляторе.",""
+"passed","Fri Apr 12 21:55:33 MSK 2024","Fri Apr 12 21:55:42 MSK 2024","9180","","MobileTests.Tests","","MobileTests.Tests","checkMultiplyingNegativeNumber","Тест расчета умножения отрицательного числа в калькуляторе.",""
+"passed","Fri Apr 12 21:55:52 MSK 2024","Fri Apr 12 21:56:00 MSK 2024","8703","","MobileTests.Tests","","MobileTests.Tests","checkDividingByZero","Тест расчета деления на ноль в калькуляторе.",""
+"passed","Fri Apr 12 21:56:09 MSK 2024","Fri Apr 12 21:56:19 MSK 2024","9916","","MobileTests.Tests","","MobileTests.Tests","checkSubtractingFractionalNumber","Тест расчета вычитания с дробным числом в калькуляторе.",""
+"passed","Fri Apr 12 21:55:42 MSK 2024","Fri Apr 12 21:55:52 MSK 2024","9263","","MobileTests.Tests","","MobileTests.Tests","checkMultiplying","Тест расчета умножения в калькуляторе.",""
+"passed","Fri Apr 12 21:56:19 MSK 2024","Fri Apr 12 21:56:28 MSK 2024","8755","","MobileTests.Tests","","MobileTests.Tests","checkSum","Тест расчета суммы в калькуляторе.",""
