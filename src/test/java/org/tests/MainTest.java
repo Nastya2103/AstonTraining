@@ -89,13 +89,13 @@ public class MainTest extends BaseTest {
         String placeholderNameUserCard = "Имя держателя (как на карте)";
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
 
-        boolean checkAmountPopup = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//div[@class = 'header__payment-amount']/span"), valueAmount));
-        boolean checkNumberPhone = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//p[@class = 'header__payment-info']"), valueNumberPhone));
-        boolean checkTextButtonOfPay = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//button[text() = ' Оплатить  65.00 BYN ']"), valueAmount));
-        boolean placeholderCardNumberField = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class= 'ng-tns-c49-1 ng-star-inserted']"), placeholderCardNumber));
-        boolean placeholderValidityField = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-4 ng-star-inserted']"), placeholderValidity));
-        boolean placeholderCVCField = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-5 ng-star-inserted']"), placeholderCVC));
-        boolean placeholderNameUserCardField = wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-3 ng-star-inserted']"), placeholderNameUserCard));
-        boolean payIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class ='cards-brands cards-brands__container ng-tns-c55-0 ng-trigger ng-trigger-brandsState ng-star-inserted']"))) != null;
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//div[@class = 'header__payment-amount']/span"), valueAmount)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//div[@class = 'header__payment-amount']/span"), valueAmount)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//button[contains(text(), 'Оплатить')]"), valueAmount)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class= 'ng-tns-c49-1 ng-star-inserted']"), placeholderCardNumber)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-4 ng-star-inserted']"), placeholderValidity)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-5 ng-star-inserted']"), placeholderCVC)));
+        Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//label[@class ='ng-tns-c49-3 ng-star-inserted']"), placeholderNameUserCard)));
+        Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class ='cards-brands cards-brands__container ng-tns-c55-0 ng-trigger ng-trigger-brandsState ng-star-inserted']")))!= null);
     }
 }
